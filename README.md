@@ -1,23 +1,6 @@
 # Portfolio
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -42,8 +25,6 @@ I am really capable of as a developer.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>HTML</summary>
   <ul>
@@ -61,8 +42,6 @@ I am really capable of as a developer.
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **Toolbar**
 - **Headline Portion**
@@ -135,6 +114,6 @@ I would like to thank the entire microverse community for helping me out with th
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
