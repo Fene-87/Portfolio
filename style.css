@@ -194,6 +194,9 @@ body {
   gap: 10px;
   border-style: none;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .btn-project:hover {
@@ -267,6 +270,9 @@ body {
   height: 48px;
   border-style: none;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .third-section {
