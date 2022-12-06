@@ -383,3 +383,77 @@ body {
   line-height: 42px;
   color: #fff;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+  gap: 58px;
+  height: 844px;
+  width: 325px;
+}
+
+.contact p {
+  width: 327px;
+  height: 216px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 330px;
+  gap: 24px;
+  align-items: center;
+}
+
+.form-input input {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 2px dotted #dbd8d7;
+}
+
+.form-input textarea {
+  width: 320px;
+  height: 110px;
+  background-color: #fbf8f7;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  padding-left: 12px;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.form-button {
+  width: 131px;
+  height: 48px;
+  background-color: #ff6b00;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 3%;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #091e42;
+}
