@@ -288,6 +288,7 @@ body {
   background-repeat: no-repeat;
   background-position: 260px 420px;
   height: 600px;
+  width: 100%;
 }
 
 .about-me h2 {
