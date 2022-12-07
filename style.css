@@ -437,23 +437,3 @@ body {
   padding-top: 12px;
   margin-top: 12px;
 }
-
-.form-button {
-  width: 131px;
-  height: 48px;
-  background-color: #ff6b00;
-  gap: 10px;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 3%;
-  border: none;
-  margin-top: 12px;
-  cursor: pointer;
-}
-
-.form-button:hover {
-  background-color: #091e42;
-}
