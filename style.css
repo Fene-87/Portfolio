@@ -4,6 +4,10 @@ body {
   width: 375px;
 }
 
+.nav-list {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -490,6 +494,28 @@ body {
 
   .nav-icon-span {
     display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 255px;
+    gap: 15px;
+    margin-right: 150px;
+  }
+
+  .nav-list li {
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: 15px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .nav-list li:hover {
+    background-color: #172b4d;
   }
 
   .first-section {
