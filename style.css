@@ -620,177 +620,62 @@ body {
     gap: 15px;
   }
 
-  .works-card {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
-    background-image: url(./img/Img\ Placeholder-bg-resized.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .works-card h4 {
-    width: 295px;
-    height: 60px;
-    color: #fff;
-    padding-top: 8px;
-    line-height: 44px;
-    font-family: 'Crete Rount', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    padding-left: 16px;
-  }
-
-  .works-card p {
-    width: 295px;
-    height: 87px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 16px;
-    color: #fff;
-  }
-
-  .works-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 16px;
-    gap: 20px;
-    width: 350px;
-  }
-
-  .works-ul li {
-    border: 1px solid #8993a4;
-    padding: 10px 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.24);
-  }
-
-  .works-card button {
-    background-color: #ff6b00;
-    width: 350px;
-    height: 48px;
-    border-style: none;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 700;
-    font-size: 17px;
-  }
-
   .third-section {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    background-color: #1c1a19;
+    max-width: 1440px;
+    height: 1150px;
   }
 
   .about-me {
-    padding-top: 3rem;
-    background-image: url(./img/Group-resized.png);
-    background-repeat: no-repeat;
-    background-position: 260px 420px;
+    margin-left: 80px;
+    background-image: url(./img/Frame-two.png);
+    background-position: 920px 120px;
     height: 600px;
-    width: 100%;
+    max-width: 1346px;
   }
 
   .about-me h2 {
-    color: #ff6b00;
-    font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 88px;
-    letter-spacing: 0.37px;
-    height: 50px;
     margin-left: 24px;
   }
 
   .about-me p {
-    height: 148px;
     margin-top: 15px;
     margin-left: 24px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #f4f5f7;
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
   }
 
   .about-me button {
     margin-left: 24px;
-    background-color: #ff6b00;
-    gap: 10px;
-    width: 161px;
-    height: 48px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 3%;
-    color: #fff;
-    border-style: none;
-    cursor: pointer;
-  }
-
-  .works-card button:hover {
-    background-color: #acb7c3;
-  }
-
-  .about-me button:hover {
-    background-color: #acb7c3;
-  }
-
-  .frameworks {
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 24px;
-    padding-top: 4rem;
   }
 
   .third-section hr {
-    width: 300px;
+    width: 1200px;
   }
 
-  .skills-icon {
-    color: #ff6b00;
-    padding-right: 10px;
-  }
-
-  .icon-transform {
-    transform: rotate(-45deg);
+  .frameworks {
+    height: 596px;
+    max-width: 1200px;
+    flex-direction: row;
+    margin-left: 100px;
+    padding-top: 0;
+    justify-content: space-between;
   }
 
   .skill-items {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    margin-top: 120px;
   }
 
   .list-header {
-    width: 164px;
-    color: #fff;
-    top: 8px;
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 44px;
-    padding-bottom: 10px;
+    width: 228px;
+    font-size: 32px;
   }
 
   .items {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 42px;
-    color: #fff;
+    font-size: 20px;
   }
 
   .contact {
