@@ -458,3 +458,430 @@ body {
 .form-button:hover {
   background-color: #091e42;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+  }
+
+  .nav-name {
+    margin-left: 142px;
+    padding: 2px 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-icon-span {
+    display: none;
+  }
+
+  .first-section {
+    background-image: url(./img/Illustration-header-three.png);
+    background-position: 950px 50px;
+    height: 84vh;
+    flex-direction: row-reverse;
+    padding-top: 6rem;
+  }
+
+  .left-section {
+    height: 100%;
+    width: 10%;
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .central-section {
+    height: 100%;
+    padding-top: 0;
+  }
+
+  .section-text {
+    padding-left: 0;
+    justify-content: center;
+    width: 566px;
+  }
+
+  .section-text h2 {
+    font-size: 72px;
+    width: 566px;
+    height: 120px;
+    line-height: 80px;
+  }
+
+  .section-text h4 {
+    font-size: 32px;
+    font-weight: 500;
+    width: 566px;
+    margin: 5px 0;
+    line-height: 30px;
+  }
+
+  .section-text p {
+    width: 566px;
+    left: 24px;
+    font-size: 20px;
+    color: #cfcfcf;
+    line-height: 32px;
+  }
+
+  .second-section {
+    padding: 10px;
+    width: 375px;
+  }
+
+  .second-section h3 {
+    width: 327px;
+    height: 50px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1c1a19;
+    padding-left: 24px;
+    padding-top: 3rem;
+    padding-bottom: 10px;
+  }
+
+  .second-section hr {
+    color: #212121;
+    width: 280px;
+    margin-top: 10px;
+  }
+
+  .recent-works {
+    width: 327px;
+    height: 237px;
+    padding-left: 24px;
+    background-image: url(./img/Img\ Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+  }
+
+  .story-one {
+    height: 15px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #091e42;
+  }
+
+  .story-two {
+    height: 120px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    width: 350px;
+  }
+
+  .languages {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 20px;
+    width: 350px;
+  }
+
+  .languages li {
+    border: 1px solid #8993a4;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #091e42;
+  }
+
+  .btn-project {
+    background-color: #ff6b00;
+    height: 48px;
+    width: 124px;
+    padding: 12px;
+    gap: 10px;
+    border-style: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .btn-project:hover {
+    background-color: #acb7c3;
+  }
+
+  .main-section {
+    display: grid;
+    grid-template-rows: repeat(6, 386px);
+    width: 350px;
+    margin-top: 30px;
+    gap: 80px;
+  }
+
+  .works-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+    background-image: url(./img/Img\ Placeholder-bg-resized.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .works-card h4 {
+    width: 295px;
+    height: 60px;
+    color: #fff;
+    padding-top: 8px;
+    line-height: 44px;
+    font-family: 'Crete Rount', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    padding-left: 16px;
+  }
+
+  .works-card p {
+    width: 295px;
+    height: 87px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 16px;
+    color: #fff;
+  }
+
+  .works-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 16px;
+    gap: 20px;
+    width: 350px;
+  }
+
+  .works-ul li {
+    border: 1px solid #8993a4;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .works-card button {
+    background-color: #ff6b00;
+    width: 350px;
+    height: 48px;
+    border-style: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .third-section {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1a19;
+  }
+
+  .about-me {
+    padding-top: 3rem;
+    background-image: url(./img/Group-resized.png);
+    background-repeat: no-repeat;
+    background-position: 260px 420px;
+    height: 600px;
+    width: 100%;
+  }
+
+  .about-me h2 {
+    color: #ff6b00;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    height: 50px;
+    margin-left: 24px;
+  }
+
+  .about-me p {
+    height: 148px;
+    margin-top: 15px;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f4f5f7;
+  }
+
+  .about-me button {
+    margin-left: 24px;
+    background-color: #ff6b00;
+    gap: 10px;
+    width: 161px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 3%;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .works-card button:hover {
+    background-color: #acb7c3;
+  }
+
+  .about-me button:hover {
+    background-color: #acb7c3;
+  }
+
+  .frameworks {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    padding-top: 4rem;
+  }
+
+  .third-section hr {
+    width: 300px;
+  }
+
+  .skills-icon {
+    color: #ff6b00;
+    padding-right: 10px;
+  }
+
+  .icon-transform {
+    transform: rotate(-45deg);
+  }
+
+  .skill-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  .list-header {
+    width: 164px;
+    color: #fff;
+    top: 8px;
+    font-family: 'Meera Inimai', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 44px;
+    padding-bottom: 10px;
+  }
+
+  .items {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 42px;
+    color: #fff;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 24px;
+    gap: 58px;
+    height: 844px;
+    width: 325px;
+  }
+
+  .contact p {
+    width: 327px;
+    height: 216px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: 330px;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .form-input input {
+    width: 327px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 2px dotted #dbd8d7;
+  }
+
+  .form-input textarea {
+    width: 320px;
+    height: 110px;
+    background-color: #fbf8f7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+
+  .form-button {
+    width: 131px;
+    height: 48px;
+    background-color: #ff6b00;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 3%;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+
+  .form-button:hover {
+    background-color: #091e42;
+  }
+}
