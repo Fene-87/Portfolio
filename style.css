@@ -4,6 +4,10 @@ body {
   width: 375px;
 }
 
+.nav-list {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -119,7 +123,13 @@ body {
   width: 375px;
 }
 
-.second-section h3 {
+.second-sec-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.second-sec-div h3 {
   width: 327px;
   height: 50px;
   font-family: 'Crete Round', sans-serif;
@@ -132,7 +142,7 @@ body {
   padding-bottom: 10px;
 }
 
-.second-section hr {
+.second-sec-div hr {
   color: #212121;
   width: 280px;
   margin-top: 10px;
@@ -457,4 +467,272 @@ body {
 
 .form-button:hover {
   background-color: #091e42;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+  }
+
+  .nav-name {
+    margin-left: 142px;
+    padding: 2px 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-icon-span {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 255px;
+    gap: 15px;
+    margin-right: 150px;
+  }
+
+  .nav-list li {
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: 15px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .nav-list li:hover {
+    background-color: #172b4d;
+  }
+
+  .first-section {
+    background-image: url(./img/Illustration-header-three.png);
+    background-position: 950px 50px;
+    height: 84vh;
+    flex-direction: row-reverse;
+    padding-top: 6rem;
+  }
+
+  .left-section {
+    height: 100%;
+    width: 10%;
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .central-section {
+    height: 100%;
+    padding-top: 0;
+  }
+
+  .section-text {
+    padding-left: 0;
+    justify-content: center;
+    width: 566px;
+  }
+
+  .section-text h2 {
+    font-size: 72px;
+    width: 566px;
+    height: 120px;
+    line-height: 80px;
+  }
+
+  .section-text h4 {
+    font-size: 32px;
+    font-weight: 500;
+    width: 566px;
+    margin: 5px 0;
+    line-height: 30px;
+  }
+
+  .section-text p {
+    width: 566px;
+    left: 24px;
+    font-size: 20px;
+    color: #cfcfcf;
+    line-height: 32px;
+  }
+
+  .second-section {
+    padding: 10px;
+    max-width: 1440px;
+  }
+
+  .second-sec-div {
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+  }
+
+  .second-sec-div h3 {
+    padding-left: 80px;
+  }
+
+  .second-sec-div hr {
+    color: #212121;
+    width: 780px;
+    margin: 0;
+    height: 1px;
+    padding: 0;
+    margin-top: 4rem;
+  }
+
+  .second-sec-works {
+    width: 1080px;
+    margin-left: 80px;
+    margin-top: 1rem;
+    display: flex;
+    gap: 24px;
+  }
+
+  .recent-works {
+    width: 684px;
+    height: 448px;
+    padding-left: 24px;
+    background-image: url(./img/Img\ Placeholder\ two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+  }
+
+  .recent-works-two {
+    padding-top: 0;
+  }
+
+  .story-one {
+    height: 10px;
+    width: 448px;
+    font-size: 40px;
+    line-height: 0;
+    margin-top: 20px;
+  }
+
+  .story-two {
+    height: 120px;
+    width: 448px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .languages {
+    width: 448px;
+  }
+
+  .main-section {
+    grid-template-columns: repeat(3, 400px);
+    width: 1150px;
+    height: 800px;
+    margin-top: 30px;
+    margin-left: 80px;
+    gap: 15px;
+  }
+
+  .third-section {
+    max-width: 1440px;
+    height: 1150px;
+  }
+
+  .about-me {
+    margin-left: 80px;
+    background-image: url(./img/Frame-two.png);
+    background-position: 920px 120px;
+    height: 600px;
+    max-width: 1346px;
+  }
+
+  .about-me h2 {
+    margin-left: 24px;
+  }
+
+  .about-me p {
+    margin-top: 15px;
+    margin-left: 24px;
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+  }
+
+  .about-me button {
+    margin-left: 24px;
+  }
+
+  .third-section hr {
+    width: 1200px;
+  }
+
+  .frameworks {
+    height: 596px;
+    max-width: 1200px;
+    flex-direction: row;
+    margin-left: 100px;
+    padding-top: 0;
+    justify-content: space-between;
+  }
+
+  .skill-items {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    margin-top: 120px;
+  }
+
+  .list-header {
+    width: 228px;
+    font-size: 32px;
+  }
+
+  .items {
+    font-size: 20px;
+  }
+
+  .contact {
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 58px;
+    height: 400px;
+    width: 1163px;
+  }
+
+  .contact p {
+    width: 455px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: start;
+  }
+
+  .form-input {
+    width: 686px;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .form-input input {
+    width: 652px;
+  }
+
+  .form-input textarea {
+    width: 684px;
+    height: 114px;
+    padding-left: 0;
+  }
 }
