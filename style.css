@@ -547,6 +547,13 @@ body {
     padding-left: 0;
     justify-content: center;
     width: 566px;
+    animation: left-to-right 1s ease-in;
+  }
+
+  @keyframes left-to-right {
+    100% {
+      transform: translateX(100%);
+    }
   }
 
   .section-text h2 {
@@ -734,5 +741,9 @@ body {
     width: 684px;
     height: 114px;
     padding-left: 0;
+  }
+
+  .section-text h2:hover {
+    font-size: 80px;
   }
 }
