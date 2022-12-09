@@ -556,6 +556,10 @@ body {
     line-height: 80px;
   }
 
+  .section-text h2:hover {
+    font-size: 80px;
+  }
+
   .section-text h4 {
     font-size: 32px;
     font-weight: 500;
