@@ -50,6 +50,14 @@ I am really capable of as a developer.
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Click here to view the portfolio website.
+
+- [Live Demo Link](https://fene-87.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
