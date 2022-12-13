@@ -520,8 +520,9 @@ body {
 
   .first-section {
     background-image: url(./img/Illustration-header-three.png);
-    background-position: 950px 50px;
-    height: 84vh;
+    background-position: right;
+    height: 87vh;
+    width: 100%;
     flex-direction: row-reverse;
     padding-top: 6rem;
   }
