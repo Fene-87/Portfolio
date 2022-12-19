@@ -55,7 +55,7 @@ a {
 
 .nav-list li {
   width: 255px;
-  border-bottom: 1px solid #FFF5E1;
+  border-bottom: 1px solid #fff5e1;
   padding: 12px 12px;
 }
 
@@ -70,7 +70,7 @@ a {
   cursor: pointer;
 }
 
-.nav-li{
+.nav-li {
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -78,9 +78,9 @@ a {
   line-height: 20px;
   cursor: pointer;
   width: 250px;
-  color: #FFF5E1;
+  color: #fff5e1;
   font-size: 32px;
-  border: #FFF5E1;
+  border: #fff5e1;
 }
 
 .nav-list.active {
@@ -584,7 +584,7 @@ a {
   .nav-list li {
     width: 80px;
     border: none;
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 
   .nav-list li:hover {
