@@ -17,10 +17,11 @@
         <nav class="nav-bar">
             <a href="#" class="nav-name">Mark Fenekayas</a>
             <ul class="nav-list">
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li><i class="fa-regular fa-envelope"></i></li>
+                <span class="nav-list-remove"><i class="fa-solid fa-xmark"></i></span>
+                <li><a href="#portfolio"><span class="nav-li">Portfolio</span></a></li>
+                <li><a href="#about"><span class="nav-li">About</span></a></li>
+                <li><a href="#contacts"><span class="nav-li">Contact</span></a></li>
+                <li class="nav-envelope-icon"><i class="fa-regular fa-envelope"></i></li>
             </ul>
             <span class="nav-icon-span"><i class="fa-solid fa-bars nav-icon"></i></span>
         </nav>
@@ -50,7 +51,7 @@
         </section>
     </section>
 
-    <section class="second-section">
+    <section class="second-section" id="portfolio">
         <div class="second-sec-div">
             <h3>My Recent Works</h3>
             <hr />
@@ -166,7 +167,7 @@
         </main>
     </section>
 
-    <section class="third-section">
+    <section class="third-section" id="about">
         <section class="about-me">
             <h2>About me</h2>
             <p>
@@ -205,7 +206,7 @@
         </section>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contacts">
         <p>
             I'm always interested in hearing about new projects,
             so if you'd like to chat please get in
@@ -217,5 +218,6 @@
             <button type="submit" class="form-button">Get in touch</button>
         </form>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
