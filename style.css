@@ -47,7 +47,7 @@ a {
   margin-left: -100%;
   background-color: #3e3c3c;
   height: 100vh;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   bottom: 0;
   top: 0;
@@ -64,9 +64,9 @@ a {
 }
 
 .nav-list-remove {
-  margin-left: 18rem;
+  margin-left: 17rem;
   font-size: 24px;
-  color: white;
+  color: #979493;
   cursor: pointer;
 }
 
