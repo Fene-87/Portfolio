@@ -336,6 +336,102 @@ a {
   font-size: 17px;
 }
 
+.popup-section {
+  position: fixed;
+  margin-left: -100%;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.popup-section.active {
+  margin-left: 2px;
+}
+
+.popup-window {
+  width: 343px;
+  height: 650px;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-win-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100px;
+}
+
+.pop-win-h3 {
+  width: 259px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.pop-win-remove {
+  font-size: 24px;
+  margin-right: 2rem;
+  color: #67798e;
+  cursor: pointer;
+}
+
+.works-ul .works-list {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #172b4d;
+  top: 80px;
+}
+
+.popup-window img {
+  margin-left: 15px;
+  width: 311px;
+}
+
+.pop-win-text {
+  width: 315px;
+  margin-left: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  height: 140px;
+}
+
+.pop-win-buttons {
+  margin-left: 15px;
+  width: 311px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.pop-win-buttons button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
 .third-section {
   margin-top: 80px;
   display: flex;
@@ -725,6 +821,67 @@ a {
     margin-top: 30px;
     margin-left: 80px;
     gap: 15px;
+  }
+
+  .popup-section {
+    width: 1156px;
+    margin-left: -100%;
+    height: 631px;
+    margin-top: 40px;
+  }
+
+  .popup-section.active {
+    margin-left: 102px;
+  }
+
+  .popup-window {
+    width: 1156px;
+    height: 631px;
+    top: 100px;
+    margin-left: 0;
+  }
+
+  .pop-win-header {
+    padding: 24px;
+    height: 20px;
+    margin-top: 1rem;
+  }
+
+  .pop-win-h3 {
+    width: 600px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+  }
+
+  .works-ul .works-list {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    top: 40px;
+  }
+
+  .pop-works {
+    margin-left: 12px;
+    margin-top: 0;
+    display: flex;
+    gap: 8px;
+  }
+
+  .image-text-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .popup-window img {
+    width: 659px;
+    height: 448px;
+  }
+
+  .pop-win-text {
+    width: 424px;
+    line-height: 30px;
+    height: 375px;
   }
 
   .third-section {
