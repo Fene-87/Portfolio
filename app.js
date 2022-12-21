@@ -245,3 +245,13 @@ const closePopup = document.querySelector('.pop-win-remove');
 closePopup.addEventListener('click', () => {
   main.classList.remove('active');
 });
+
+const multiPostProject = document.querySelector('.btn-project');
+multiPostProject.addEventListener('click', () => {
+  const popWinHeader = document.querySelector('.pop-win-h3');
+  popWinHeader.textContent = multiPostProject.parentElement.children[0].children[0].textContent;
+
+  const popWinPar = document.querySelector('.pop-win-text');
+  popWinPar.textContent = multiPostProject.parentElement.children[0].children[1].textContent;
+  main.classList.toggle('active');
+});
