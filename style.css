@@ -371,13 +371,13 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .pop-win-remove {
   font-size: 24px;
   margin-right: 2rem;
-  color: #67798E;
+  color: #67798e;
   cursor: pointer;
 }
 
@@ -386,7 +386,7 @@ a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #172B4D;
+  color: #172b4d;
   top: 80px;
 }
 
@@ -418,7 +418,7 @@ a {
   width: 150px;
   height: 40px;
   border: none;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -840,19 +840,19 @@ a {
     top: 100px;
     margin-left: 0;
   }
-  
+
   .pop-win-header {
     padding: 24px;
     height: 20px;
     margin-top: 1rem;
   }
-  
+
   .pop-win-h3 {
     width: 600px;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
   }
-  
+
   .works-ul .works-list {
     font-weight: 500;
     font-size: 15px;
@@ -863,7 +863,6 @@ a {
   .pop-works {
     margin-left: 12px;
     margin-top: 0;
-    gap: 2rem;
     display: flex;
     gap: 8px;
   }
@@ -873,12 +872,12 @@ a {
     flex-direction: row;
     margin-left: 10px;
   }
-  
+
   .popup-window img {
     width: 659px;
     height: 448px;
   }
-  
+
   .pop-win-text {
     width: 424px;
     line-height: 30px;

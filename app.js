@@ -191,12 +191,12 @@ const projectDetails = [
 ];
 
 const names = document.querySelectorAll('.main-section h4');
-for (let i = 0; i < names.length; i++) {
+for (let i = 0; i < names.length; i += 1) {
   names[i].textContent = projectDetails[i].name;
 }
 
 const descriptions = document.querySelectorAll('.main-section p');
-for (let i = 0; i < descriptions.length; i++) {
+for (let i = 0; i < descriptions.length; i += 1) {
   descriptions[i].textContent = projectDetails[i].description;
 }
 
@@ -229,7 +229,7 @@ main.innerHTML = `
 
 body.appendChild(main);
 
-const openPopup = document.querySelectorAll('.works-card button')
+const openPopup = document.querySelectorAll('.works-card button');
 openPopup.forEach((item) => {
   item.addEventListener('click', () => {
     const popWinHeader = document.querySelector('.pop-win-h3');
