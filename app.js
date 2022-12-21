@@ -227,6 +227,8 @@ main.innerHTML = `
 </div>
 `;
 
+body.appendChild(main);
+
 const openPopup = document.querySelectorAll('.works-card button')
 openPopup.forEach((item) => {
   item.addEventListener('click', () => {
