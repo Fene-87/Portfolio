@@ -275,3 +275,6 @@ function validateEmail(event) {
 }
 
 wholeForm.addEventListener('submit', validateEmail);
+
+const contactName = document.querySelector('#name');
+const contactEmail = document.querySelector('#email');
