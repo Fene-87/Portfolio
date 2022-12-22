@@ -258,6 +258,7 @@ multiPostProject.addEventListener('click', () => {
 
 const emailError = document.querySelector('.email-error');
 const emailInput = document.querySelector('#email');
+const wholeForm = document.querySelector('.form-input);
 
 function validateEmail(event) {
   const emailInputValue = emailInput.value;
@@ -272,3 +273,5 @@ function validateEmail(event) {
   emailInput.classList.remove('invalid');
   return true;
 }
+
+wholeForm.addEventListener('submit', validateEmail);
