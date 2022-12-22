@@ -255,3 +255,23 @@ multiPostProject.addEventListener('click', () => {
   popWinPar.textContent = multiPostProject.parentElement.children[0].children[1].textContent;
   main.classList.toggle('active');
 });
+
+const emailError = document.querySelector('.email-error');
+const emailInput = document.querySelector('#email');
+const wholeForm = document.querySelector('.form-input');
+
+function validateEmail(event) {
+  const emailInputValue = emailInput.value;
+
+  if (emailInputValue.match(/[A-Z]/)) {
+    event.preventDefault();
+    emailError.innerHTML = '* email should not contain uppercase letters';
+    emailInput.classList.add('invalid');
+    return false;
+  }
+  emailError.innerHTML = '';
+  emailInput.classList.remove('invalid');
+  return true;
+}
+
+wholeForm.addEventListener('submit', validateEmail);
