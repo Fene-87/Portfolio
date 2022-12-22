@@ -255,3 +255,16 @@ multiPostProject.addEventListener('click', () => {
   popWinPar.textContent = multiPostProject.parentElement.children[0].children[1].textContent;
   main.classList.toggle('active');
 });
+
+const emailError = document.querySelector('.email-error');
+
+function validateEmail () {
+  const emailInputValue = document.querySelector('#email').value;
+
+  if (emailInputValue.match(/[A-Z]/)) {
+    emailError.innerHTML = '*Only use lowercase letters';
+    return false;
+  }
+  emailError.innerHTML = '';
+  return true;
+}

@@ -580,6 +580,7 @@ a {
   line-height: 24px;
   border: none;
   border-bottom: 2px dotted #dbd8d7;
+  outline: none;
 }
 
 .form-input textarea {
@@ -614,6 +615,10 @@ a {
 
 .form-button:hover {
   background-color: #091e42;
+}
+
+.email-error {
+  color: red;
 }
 
 @media screen and (min-width: 768px) {
