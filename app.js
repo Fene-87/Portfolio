@@ -258,7 +258,7 @@ multiPostProject.addEventListener('click', () => {
 
 const emailError = document.querySelector('.email-error');
 const emailInput = document.querySelector('#email');
-const wholeForm = document.querySelector('.form-input);
+const wholeForm = document.querySelector('.form-input');
 
 function validateEmail(event) {
   const emailInputValue = emailInput.value;
