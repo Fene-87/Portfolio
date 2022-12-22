@@ -257,14 +257,18 @@ multiPostProject.addEventListener('click', () => {
 });
 
 const emailError = document.querySelector('.email-error');
+const emailInput = document.querySelector('#email');
 
-function validateEmail () {
-  const emailInputValue = document.querySelector('#email').value;
+function validateEmail(event) {
+  const emailInputValue = emailInput.value;
 
   if (emailInputValue.match(/[A-Z]/)) {
-    emailError.innerHTML = '*Only use lowercase letters';
+    event.preventDefault();
+    emailError.innerHTML = '* email should not contain uppercase letters';
+    emailInput.classList.add('invalid');
     return false;
   }
   emailError.innerHTML = '';
+  emailInput.classList.remove('invalid');
   return true;
 }
