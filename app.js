@@ -303,3 +303,5 @@ const getFormInfo = () => {
   contactEmail.value = data.email;
   contactMessage.value = data.message;
 }
+
+document.addEventListener('DOMContentLoaded', getFormInfo);
