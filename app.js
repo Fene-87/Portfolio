@@ -285,16 +285,16 @@ const setFormInfo = () => {
     name: contactName.value,
     email: contactEmail.value,
     message: contactMessage.value,
-  }
+  };
   localStorage.setItem('data', JSON.stringify(formData));
-}
+};
 
 contactName.addEventListener('change', setFormInfo);
 contactEmail.addEventListener('change', setFormInfo);
 contactMessage.addEventListener('change', setFormInfo);
 
 const getFormInfo = () => {
-  let data = JSON.parse(localStorage.getItem('data'));
+  const data = JSON.parse(localStorage.getItem('data'));
 
   if (data === null) {
     return;
@@ -302,6 +302,6 @@ const getFormInfo = () => {
   contactName.value = data.name;
   contactEmail.value = data.email;
   contactMessage.value = data.message;
-}
+};
 
 document.addEventListener('DOMContentLoaded', getFormInfo);
