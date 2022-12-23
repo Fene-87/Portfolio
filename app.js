@@ -275,3 +275,33 @@ function validateEmail(event) {
 }
 
 wholeForm.addEventListener('submit', validateEmail);
+
+const contactName = document.querySelector('#name');
+const contactEmail = document.querySelector('#email');
+const contactMessage = document.querySelector('#contact-message');
+
+const setFormInfo = () => {
+  const formData = {
+    name: contactName.value,
+    email: contactEmail.value,
+    message: contactMessage.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formData));
+};
+
+contactName.addEventListener('change', setFormInfo);
+contactEmail.addEventListener('change', setFormInfo);
+contactMessage.addEventListener('change', setFormInfo);
+
+const getFormInfo = () => {
+  const data = JSON.parse(localStorage.getItem('data'));
+
+  if (data === null) {
+    return;
+  }
+  contactName.value = data.name;
+  contactEmail.value = data.email;
+  contactMessage.value = data.message;
+};
+
+document.addEventListener('DOMContentLoaded', getFormInfo);
