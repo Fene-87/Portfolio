@@ -57,7 +57,7 @@ section.innerHTML = `
                 </p>
                 <ul class="works-ul">
                     <li>Rails</li>
-                    <li>React.js</li>
+                    <li>React</li>
                     <li>PostgresSQL</li>
                 </ul>
                 <button type="button">See Project</button>
@@ -79,6 +79,7 @@ section.innerHTML = `
                 </div>
             </section>
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -86,13 +87,15 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>SpaceX API</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -100,11 +103,12 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>CoinGecko API</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
             <section class="works-card">
                 <h4>Professional Art <br/> Printing Data</h4>
@@ -157,21 +161,21 @@ const projectDetails = [
   },
 
   {
-    name: 'Professional Art',
-    description: 'This is a Professional Art project. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'Space Travellers Hub',
+    description: 'A web application whose aim is to facilitate a company that provides commercial and scientific space travel services. The application gets real live data from the SpaceX API. It allows users to book rockets and join selected space missions.',
+    featuredImage: './img/Space-travellers.PNG',
+    technologies: ['React', 'Redux', 'SpaceX API'],
+    liveLink: 'https://space-travelers-hub-bbxn.onrender.com/',
+    sourceLink: 'https://github.com/Fene-87/space-travelers-hub',
   },
 
   {
-    name: 'SmartHub Groceries',
-    description: 'This is  Smart Hub Groceries project. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'CryptoMetrics',
+    description: 'CryptoMetrics is a comprehensive web application that provides users with detailed information about various cryptocurrencies. Stay up-to-date with real-time data, market trends, and key metrics for a wide range of digital currencies',
+    featuredImage: './img/CryptoMetrics.PNG',
+    technologies: ['React', 'Redux', 'CoinGecko API'],
+    liveLink: 'https://cryptometrics.onrender.com/',
+    sourceLink: 'https://github.com/Fene-87/cryptometrics',
   },
 
   {
