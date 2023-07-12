@@ -64,6 +64,7 @@ section.innerHTML = `
                 </div>
             </section>
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -71,11 +72,11 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>Ruby on Rails</li>
+                    <li>PostgreSQL</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
             <section class="works-card">
                 <h4>Professional Art <br/> Printing Data</h4>
@@ -147,12 +148,12 @@ const projectDetails = [
   },
 
   {
-    name: 'Website Portfolio',
-    description: 'Hello this is a website portfolio. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'Budget Tracker',
+    description: 'Budget Tracker is a Ruby on Rails mobile web application designed to empower users in effectively managing their budgets. It provides a user-friendly interface and a range of features to assist users in budget planning and tracking.',
+    featuredImage: './img/Budget-tracker.PNG',
+    technologies: ['Ruby on Rails', 'PostgreSQL'],
+    liveLink: 'https://budget-tracker-lkkh.onrender.com/',
+    sourceLink: 'https://github.com/Fene-87/budget_app',
   },
 
   {
