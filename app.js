@@ -30,19 +30,12 @@ section.innerHTML = `
             <article>
                 <h4 class="story-one">Multi-Post Stories</h4>
                 <p class="story-two">
-                    A daily section of privately personalized reads;
-                    no accounts or sign-ups required. Has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a standard dummy text.
+                    Below, you'll find an impressive lineup of my remarkable
+                    projects, each a testament to my passion and expertise. Join
+                    me as we explore this diverse array of projects, where
+                    artistry meets functionality, and innovation knows no bounds.
                 </p>
             </article>
-            <ul class="languages">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>ruby</li>
-            </ul>
-            <button type="button" class="btn-project">See Project</button>
             </div>
         </div>
 
@@ -211,9 +204,9 @@ for (let i = 0; i < descriptions.length; i += 1) {
 }
 
 const cardImages = document.querySelectorAll('.works-card');
-for(let i = 0; i < cardImages.length; i++) {
-  const backgroundImg = projectDetails[i].featuredImage
-  cardImages[i].style.backgroundImage = `url(${backgroundImg})`
+for (let i = 0; i < cardImages.length; i += 1) {
+  const backgroundImg = projectDetails[i].featuredImage;
+  cardImages[i].style.backgroundImage = `url(${backgroundImg})`;
 }
 
 const body = document.querySelector('body');
@@ -225,18 +218,16 @@ main.innerHTML = `
     <h3 class="pop-win-h3"></h3>
     <span class="pop-win-remove"><i class="fa-solid fa-xmark"></i></span>
 </div>
-<ul class="works-ul pop-works">
-    <li class="works-list">html</li>
-    <li class="works-list">bootstrap</li>
-    <li class="works-list">ruby</li>
-</ul>
+
+<ul class="works-ul pop-works"></ul>
+
 <div class="image-text-button">
 <img src="" alt="" class="popup-image" />
 <div>
 <p class="pop-win-text"></p>
 <div class="pop-win-buttons">
-    <button type="button">See Live<span></span><i class="fa-solid fa-up-right-from-square"></i></button>
-    <button type="button">See Source<span><i class="fa-brands fa-github"></i></span></button>
+    <button type="button" class="live-demo">Live Demo<span></span><i class="fa-solid fa-up-right-from-square"></i></button>
+    <button type="button" class="github-repo">GitHub Repo<span><i class="fa-brands fa-github"></i></span></button>
 </div>
 </div>
 </div>
@@ -246,7 +237,7 @@ main.innerHTML = `
 body.appendChild(main);
 
 const openPopup = document.querySelectorAll('.works-card button');
-openPopup.forEach((item) => {
+openPopup.forEach((item, index) => {
   item.addEventListener('click', () => {
     const popWinHeader = document.querySelector('.pop-win-h3');
     popWinHeader.textContent = item.parentElement.children[0].textContent;
@@ -257,6 +248,40 @@ openPopup.forEach((item) => {
     popupImage.src = trimmedUrl;
     popupImage.alt = 'project-logo';
 
+    const popupTech = document.querySelector('.pop-works');
+    const specificPopupTech = item.parentElement.children[2].children;
+    for (let i = 0; i < specificPopupTech.length; i += 1) {
+      const techTextContent = specificPopupTech[i].textContent;
+      const liElement = document.createElement('li');
+      liElement.textContent = techTextContent;
+      liElement.classList.add('works-list');
+      popupTech.appendChild(liElement);
+    }
+    const liveDemoUrl = document.querySelector('.live-demo');
+    let link;
+    const handleLiveDemoLink = () => {
+      liveDemoUrl.addEventListener('click', (event) => {
+        event.preventDefault();
+        link = document.createElement('a');
+        link.href = projectDetails[index].liveLink;
+        link.target = '_blank';
+        link.click();
+      });
+    };
+    handleLiveDemoLink();
+
+    const githubDemoUrl = document.querySelector('.github-repo');
+    const handleGithubDemoLink = () => {
+      githubDemoUrl.addEventListener('click', (event) => {
+        event.preventDefault();
+        const link = document.createElement('a');
+        link.href = projectDetails[index].sourceLink;
+        link.target = '_blank';
+        link.click();
+      });
+    };
+    handleGithubDemoLink();
+
     const popWinPar = document.querySelector('.pop-win-text');
     popWinPar.textContent = item.parentElement.children[1].textContent;
     main.classList.toggle('active');
@@ -266,6 +291,8 @@ openPopup.forEach((item) => {
 const closePopup = document.querySelector('.pop-win-remove');
 closePopup.addEventListener('click', () => {
   main.classList.remove('active');
+  const popupTech = document.querySelector('.pop-works');
+  popupTech.innerHTML = '';
 });
 
 const multiPostProject = document.querySelector('.btn-project');

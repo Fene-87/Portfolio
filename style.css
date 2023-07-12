@@ -203,7 +203,7 @@ a {
   width: 327px;
   height: 237px;
   padding-left: 24px;
-  background-image: url(./img/Img\ Placeholder.png);
+  background-image: url(./img/prof-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5rem;
@@ -639,7 +639,7 @@ a {
   }
 
   .nav-bar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 72px;
   }
@@ -800,7 +800,7 @@ a {
     width: 684px;
     height: 448px;
     padding-left: 24px;
-    background-image: url(./img/Img\ Placeholder\ two.png);
+    background-image: url(./img/prof-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0;
