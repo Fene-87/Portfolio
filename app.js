@@ -111,6 +111,7 @@ section.innerHTML = `
                 </div>
             </section>
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -118,13 +119,14 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>React</li>
+                    <li>Redux</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -132,11 +134,12 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
         </main>
 `;
@@ -179,21 +182,21 @@ const projectDetails = [
   },
 
   {
-    name: 'BloodBank Management',
-    description: 'This is a Blood bank management system. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'BookStore CMS',
+    description: 'A simple React/Redux project that allows users to display a list of books, add a book , and delete a particular book.',
+    featuredImage: './img/Bookstorecms.PNG',
+    technologies: ['React', 'Redux'],
+    liveLink: 'https://bookstore-i0bx.onrender.com/',
+    sourceLink: 'https://github.com/Fene-87/Bookstore',
   },
 
   {
-    name: 'Professional Art Printing Data',
-    description: 'Hey, this is Professional Art Printing Data. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'Art Gallery',
+    description: 'This simple web application is a cutting-edge web application designed to captivate art enthusiasts and create an immersive experience within the world of contemporary art. Whether you\'re an avid art collector, a curious newcomer, or simply seeking a dose of creative inspiration, this website is here to ignite your passion for the arts.',
+    featuredImage: './img/Artgallery.PNG',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://fene-87.github.io/Module-1-Capstone/',
+    sourceLink: 'https://github.com/Fene-87/Module-1-Capstone',
   },
 ];
 
