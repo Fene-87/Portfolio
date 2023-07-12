@@ -48,6 +48,7 @@ section.innerHTML = `
 
         <main class="main-section">
             <section class="works-card">
+                <div class="works-card-info">
                 <h4>Professional Art <br/> Printing Data</h4>
                 <p>
                     A daily section of privately personalized reads;
@@ -55,11 +56,12 @@ section.innerHTML = `
                     standard
                 </p>
                 <ul class="works-ul">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
+                    <li>Rails</li>
+                    <li>React.js</li>
+                    <li>PostgresSQL</li>
                 </ul>
                 <button type="button">See Project</button>
+                </div>
             </section>
             <section class="works-card">
                 <h4>Professional Art <br/> Printing Data</h4>
@@ -136,12 +138,12 @@ section.innerHTML = `
 
 const projectDetails = [
   {
-    name: 'Data Dashboard HealthCare',
-    description: 'This is a Data Dashboard Healthcare. A daily section of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    name: 'Book Ease Reservation',
+    description: 'This is a robust and user-friendly Room Reservation Application built using the Ruby on Rails framework. With its intuitive interface and powerful features, this app aims to streamline the hotel booking process for both guests and hotel staff.',
+    featuredImage: './img/Book-ease-home.PNG',
+    technologies: ['Ruby on Rails', 'React', 'PostgreSQL'],
+    liveLink: 'https://book-ease.onrender.com/',
+    sourceLink: 'https://github.com/Fene-87/hotel-room-reservation-front-end',
   },
 
   {
@@ -198,6 +200,12 @@ for (let i = 0; i < names.length; i += 1) {
 const descriptions = document.querySelectorAll('.main-section p');
 for (let i = 0; i < descriptions.length; i += 1) {
   descriptions[i].textContent = projectDetails[i].description;
+}
+
+const cardImages = document.querySelectorAll('.works-card');
+for(let i = 0; i < cardImages.length; i++) {
+  const backgroundImg = projectDetails[i].featuredImage
+  cardImages[i].style.backgroundImage = `url(${backgroundImg})`
 }
 
 const body = document.querySelector('body');
