@@ -231,7 +231,7 @@ main.innerHTML = `
     <li class="works-list">ruby</li>
 </ul>
 <div class="image-text-button">
-<img src="/img/Snapshoot Portfolio.png" alt="" />
+<img src="" alt="" class="popup-image" />
 <div>
 <p class="pop-win-text"></p>
 <div class="pop-win-buttons">
@@ -250,6 +250,12 @@ openPopup.forEach((item) => {
   item.addEventListener('click', () => {
     const popWinHeader = document.querySelector('.pop-win-h3');
     popWinHeader.textContent = item.parentElement.children[0].textContent;
+
+    const popupImage = document.querySelector('.popup-image');
+    const imgUrl = item.parentElement.parentElement.style.backgroundImage;
+    const trimmedUrl = imgUrl.replace('url("', '').replace('")', '');
+    popupImage.src = trimmedUrl;
+    popupImage.alt = 'project-logo';
 
     const popWinPar = document.querySelector('.pop-win-text');
     popWinPar.textContent = item.parentElement.children[1].textContent;
