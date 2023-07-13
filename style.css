@@ -424,7 +424,7 @@ a {
   gap: 8px;
 }
 
-.pop-win-buttons button {
+.pop-win-buttons a {
   width: 150px;
   height: 40px;
   border: none;
