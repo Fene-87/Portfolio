@@ -226,8 +226,8 @@ main.innerHTML = `
 <div>
 <p class="pop-win-text"></p>
 <div class="pop-win-buttons">
-    <button type="button" class="live-demo">Live Demo<span></span><i class="fa-solid fa-up-right-from-square"></i></button>
-    <button type="button" class="github-repo">GitHub Repo<span><i class="fa-brands fa-github"></i></span></button>
+    <a href="#" class="live-demo">Live Demo<span></span><i class="fa-solid fa-up-right-from-square"></i></a>
+    <a href="#" class="github-repo">GitHub Repo<span><i class="fa-brands fa-github"></i></span></a>
 </div>
 </div>
 </div>
@@ -258,29 +258,12 @@ openPopup.forEach((item, index) => {
       popupTech.appendChild(liElement);
     }
     const liveDemoUrl = document.querySelector('.live-demo');
-    let link;
-    const handleLiveDemoLink = () => {
-      liveDemoUrl.addEventListener('click', (event) => {
-        event.preventDefault();
-        link = document.createElement('a');
-        link.href = projectDetails[index].liveLink;
-        link.target = '_blank';
-        link.click();
-      });
-    };
-    handleLiveDemoLink();
+    liveDemoUrl.setAttribute('href', projectDetails[index].liveLink);
+    liveDemoUrl.setAttribute('target', '_blank');
 
     const githubDemoUrl = document.querySelector('.github-repo');
-    const handleGithubDemoLink = () => {
-      githubDemoUrl.addEventListener('click', (event) => {
-        event.preventDefault();
-        const link = document.createElement('a');
-        link.href = projectDetails[index].sourceLink;
-        link.target = '_blank';
-        link.click();
-      });
-    };
-    handleGithubDemoLink();
+    githubDemoUrl.setAttribute('href', projectDetails[index].sourceLink);
+    githubDemoUrl.setAttribute('target', '_blank');
 
     const popWinPar = document.querySelector('.pop-win-text');
     popWinPar.textContent = item.parentElement.children[1].textContent;
