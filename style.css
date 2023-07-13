@@ -20,7 +20,7 @@ a {
   justify-content: space-between;
   background-color: #3e3c3c;
   color: #fff;
-  position: absolute;
+  position: fixed;
   width: 375px;
   height: 72px;
 }
